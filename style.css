@@ -1,0 +1,46 @@
+body {
+        background-color: darkslateblue;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50px;
+}
+
+.surrounding-container {
+        background-color: purple;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px
+}
+
+.form {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5px;
+        column-gap: 20px;
+}
+
+.label {
+        font-weight: bold;
+}
+
+.number-input {
+        width: 35px;
+
+}
+
+.password-display {
+     background-color: white;   
+     color: black;
+     padding: 10px;
+     border: 2px solid black;
+     width: 300px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
