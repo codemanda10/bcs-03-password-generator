@@ -6,7 +6,7 @@ const includeNumbersElement = document.getElementById('includeNumbers')
 const includeSymbolsElement = document.getElementById('includeSymbols')
 const form = document.getElementById('passwordGeneratorForm')
 //constant created from id created in html
-const fpasswordDisplay = document.getElementById('passwordDisplay')
+const passwordDisplay = document.getElementById('passwordDisplay')
 
 const LOWERCASE_CHAR_CODES = arrayFromLowtoHigh(97, 122)
 //Lowercase character codes (refferred from ASCII cheat sheet)
@@ -50,8 +50,8 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
         if (includeNumbers) charcodes = charcodes.concat(NUMBERS_CHAR_CODES)
 
         const passwordCharacters = [] //empty array
-        for (let i = 0; i < characterAmount, i++) {
-                const characterCode = charCodes[Math.floor(Math.random() * characterAmount)]
+        for (let i = 0; i < characterAmount; i++) {
+                const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
                 passwordCharacters.push(String.fromCharCode(characterCode))
         }
         return passwordCharacters.join('')
@@ -59,6 +59,7 @@ function generatePassword(characterAmount, includeUppercase, includeNumbers, inc
 //this string from charcode works out much easier and cleaner than inputting each character separately
 
 function arrayFromLowtoHigh(low, high) {
+        const array = []
         for (let i = low; i <= high; i++) {
                 array.push(i)
         }
