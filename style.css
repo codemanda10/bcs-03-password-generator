@@ -43,4 +43,5 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
+     word-break: break-all; /*This is to break in the middle if it extends certain character*/
 }
