@@ -3,22 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
     <title>Password Generator</title>
 </head>
 
 <body>
     <div class="surrounding-container">
         <h1>Password Generator</h1>
-        <h3 class="password-display" id="passwordDisplay">password</h3>
+        <h3 class="password-display" id="passwordDisplay"></h3>
         <form id="passwordGeneratorForm" class="form">
-            <label for="">Number of Characters</label>
+            <label for="characterAmountNumber">Number of Characters</label>
             <div>
-                <input type="range" min="1" max="50" value="10" id="characterAmountRange">
-                <input class="number-input" type="number" min="1" max="50" value="10" id="characterAmountNumber">
+                <input type="range" min="8" max="128" value="10" id="characterAmountRange">
+                <input class="number-input" type="number" min="8" max="128" value="10" id="characterAmountNumber">
             </div>
 
             <label for="includeUppercase">Include Uppercase</label>
@@ -30,7 +30,7 @@
             <label for="includeSymbols">Include Symbols</label>
             <input type="checkbox" id="includeSymbols">
 
-            <button type="submit">Generate Password</button>
+            <button type="submit" class="btn">Generate Password</button>
         </form>
     </div>
 

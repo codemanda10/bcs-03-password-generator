@@ -45,9 +45,9 @@ form.addEventListener('submit', e => {
 function generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols) {
         String.fromCharCode(65)
         let charCodes = LOWERCASE_CHAR_CODES
-        if (includeUppercase) charcodes = charcodes.concat(UPPERCASE_CHAR_CODES)
-        if (includeSymbols) charcodes = charcodes.concat(SYMBOLS_CHAR_CODES)
-        if (includeNumbers) charcodes = charcodes.concat(NUMBERS_CHAR_CODES)
+        if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
+        if (includeNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
+        if (includeSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES)
 
         const passwordCharacters = [] //empty array
         for (let i = 0; i < characterAmount; i++) {
